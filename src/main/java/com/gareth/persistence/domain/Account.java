@@ -17,6 +17,10 @@ public class Account {
 	public Account() {
 		
 	}
+	
+	public String toString() {
+		return this.firstName;
+	}
 
 	public String getFirstName() {
 		return firstName;
