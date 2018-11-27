@@ -13,13 +13,9 @@ public class Account {
 	private String firstName;
 	private String lastName;
 	private String accountNumber;
-	
-	public Account() {
-		
-	}
-	
+
 	public String toString() {
-		return this.firstName;
+		return this.accountNumber + ": " + this.lastName + ", " + this.firstName;
 	}
 
 	public String getFirstName() {

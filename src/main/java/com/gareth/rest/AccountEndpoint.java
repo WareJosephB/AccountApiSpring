@@ -2,8 +2,6 @@ package com.gareth.rest;
 
 import java.util.Optional;
 
-import javax.websocket.server.PathParam;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +17,7 @@ import com.gareth.service.AccountService;
 @RequestMapping("/accounts")
 @RestController
 public class AccountEndpoint {
+	
 	@Autowired
 	private AccountService service;
 
@@ -39,7 +38,6 @@ public class AccountEndpoint {
 
 	@PostMapping("/addAccount")
 	public Account addAccount(@RequestBody Account account) {
-		System.out.println(account);
 		return service.add(account);
 	}
 
